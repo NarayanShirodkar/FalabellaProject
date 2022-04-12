@@ -21,3 +21,11 @@
     border-radius: 250px;
     -webkit-border-radius: 250px;
 }
+.cards-div{
+    margin: 100px 0px 100px 0px;
+}
+.cards-div h1{
+    margin: 50px 30px;
+    font-size: 45px;
+    text-align: center;
+}

@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-export default class Navbar
+export default class Brands
  extends Component {
   render() {
     return (

@@ -5,6 +5,7 @@ import './App.css';
 import './brands.css';
 import Navbar from './Components/navbar';
 import Brands from './Components/brands';
+import Cards from './Components/cards';
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
       </div> */}
 
 <Brands/>
+<Cards/>
 
 
 
