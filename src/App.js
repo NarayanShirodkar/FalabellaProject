@@ -72,7 +72,7 @@ function App() {
             <img src={require('./img/img3.png')} class="d-block w-100" alt="..." className="images-css" />
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+              <p>Some representative placeholder conten</p>
             </div>
           </div>
         </div>
