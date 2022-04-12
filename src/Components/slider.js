@@ -1,10 +1,20 @@
 import React, { Component } from 'react'
+import { userData } from "./records"
+
 
 export default class Slider
  extends Component {
   render() {
+
+    // {userData.map(user =>{return ( 
+    //     user.bannerDetails.map(imgz=>{
+    //         return (imgz.image1)
+    //     })
+    //  )})}
+
     return (
 
+        
 
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -14,7 +24,7 @@ export default class Slider
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src={require('./img/ss1.png')}class="d-block w-100" alt="..." />
+      <img src={require('./img/ss1.png')}  class="d-block w-100" alt="..." />
     </div>
     <div class="carousel-item">
       <img src={require('./img/ss2.png')} class="d-block w-100" alt="..." />

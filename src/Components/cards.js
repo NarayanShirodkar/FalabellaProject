@@ -10,7 +10,7 @@ export default class Cards
     return (
         <div>
             <div className='cards-div'>
-                <h1>Featured Cards</h1>
+                <h1>Exciting offers and discounts!</h1>
 
                 <div class="container">
   <div class="row">
