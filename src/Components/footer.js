@@ -9,7 +9,7 @@ export default class Footer
 
 
 <div class="container">
-  <footer class="py-5">
+  <footer class="py-0">
     <div class="row">
       <div class="col-2">
         <h5>Section</h5>
