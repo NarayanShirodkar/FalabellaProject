@@ -23,9 +23,15 @@
 }
 .cards-div{
     margin: 100px 0px 100px 0px;
+    background-color: #f3f3f3;
+    padding: 20px 0px 100px 0px;
 }
 .cards-div h1{
     margin: 50px 30px;
     font-size: 45px;
     text-align: center;
+}
+.sliderImg{
+    height: 600px;
+    width: 1200px;
 }
