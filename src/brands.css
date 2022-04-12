@@ -1,0 +1,23 @@
+.brands-div{
+    text-align: center;
+}
+.brands-div h1{
+    margin: 50px 30px;
+    font-size: 45px;
+}
+.brands-ul li{
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px;
+}
+.brands-ul li a{
+    text-decoration: none;
+}
+.images-css img{
+    border: 1px solid #c1c1c1;
+    height: 225px;
+    width: 225px;
+    cursor: pointer;
+    border-radius: 250px;
+    -webkit-border-radius: 250px;
+}
