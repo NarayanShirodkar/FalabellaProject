@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { userData } from "./records"
 
 export default class Footer
  extends Component {
@@ -12,7 +13,7 @@ export default class Footer
   <footer class="py-0">
     <div class="row">
       <div class="col-2">
-        <h5>Section</h5>
+        <h5>{userData.map(user =>{return ( user.footerDetails.map(ft=>{return (ft.sec1)}))})}</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
@@ -23,7 +24,7 @@ export default class Footer
       </div>
 
       <div class="col-2">
-        <h5>Section</h5>
+        <h5>{userData.map(user =>{return ( user.footerDetails.map(ft=>{return (ft.sec2)}))})}</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
@@ -32,7 +33,7 @@ export default class Footer
       </div>
 
       <div class="col-2">
-        <h5>Section</h5>
+        <h5>{userData.map(user =>{return ( user.footerDetails.map(ft=>{return (ft.sec3)}))})}</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
@@ -55,7 +56,7 @@ export default class Footer
     </div>
 
     <div class="d-flex justify-content-between py-4 my-4 border-top">
-      <p>&copy; 2021 Company, Inc. All rights reserved.</p>
+      <p>&copy; 2022 {userData.map(user =>{return (<span>{user.storeName}</span>)})}, Inc. All rights reserved.</p>
       <ul class="list-unstyled d-flex">
         <li class="ms-3"><a class="link-dark" href="#">Twitter</a></li>
         <li class="ms-3"> &middot;</li>

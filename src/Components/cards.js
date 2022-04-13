@@ -3,10 +3,12 @@ import {Card, CardText, CardBody, CardTitle, CardSubtitle, CardImg} from 'reacts
 import s1 from './img/img1.png';
 import s2 from './img/img2.png';
 import s3 from './img/img3.png';
+import { userData } from "./records"
 
 export default class Cards
  extends Component {
   render() {
+
     return (
         <div>
             <div className='cards-div'>
@@ -18,11 +20,11 @@ export default class Cards
         <Card style={{width:'25rem' }}>
             <CardImg style={{width:'25rem' }} variant="top" src={s1}/>
                 <CardBody>
-                    <CardTitle>Card Title</CardTitle>
+                <CardTitle><strong>{userData.map(user =>{return ( user.offerDetails.map(od=>{return (od.heading1)}))})} </strong> </CardTitle>
                     <CardText>
-                         Some quick example text to build on the card title and make up the bulk of the card's content.
+                    {userData.map(user =>{return ( user.offerDetails.map(od=>{return (od.des1)}))})}
                      </CardText>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-primary">{userData.map(user =>{return ( user.offerDetails.map(od=>{return (od.button1)}))})}</a>
                 </CardBody>
          </Card>
                             
@@ -31,11 +33,11 @@ export default class Cards
         <Card style={{width:'25rem' }}>
             <CardImg style={{width:'25rem' }} variant="top" src={s2}/>
                 <CardBody>
-                    <CardTitle>Card Title</CardTitle>
-                    <CardText>
-                         Some quick example text to build on the card title and make up the bulk of the card's content.
+                <CardTitle><strong>{userData.map(user =>{return ( user.offerDetails.map(od=>{return (od.heading2)}))})} </strong> </CardTitle>
+                <CardText>
+                    {userData.map(user =>{return ( user.offerDetails.map(od=>{return (od.des2)}))})}
                      </CardText>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-primary">{userData.map(user =>{return ( user.offerDetails.map(od=>{return (od.button2)}))})}</a>
                 </CardBody>
          </Card>
     </div>
@@ -43,11 +45,11 @@ export default class Cards
         <Card style={{width:'25rem' }}>
             <CardImg style={{width:'25rem' }} variant="top" src={s3}/>
                 <CardBody>
-                    <CardTitle>Card Title</CardTitle>
-                    <CardText>
-                         Some quick example text to build on the card title and make up the bulk of the card's content.
+                <CardTitle><strong>{userData.map(user =>{return ( user.offerDetails.map(od=>{return (od.heading3)}))})} </strong> </CardTitle>
+                <CardText>
+                    {userData.map(user =>{return ( user.offerDetails.map(od=>{return (od.des3)}))})}
                      </CardText>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-primary">{userData.map(user =>{return ( user.offerDetails.map(od=>{return (od.button3)}))})}</a>
                 </CardBody>
          </Card>           
     </div>
