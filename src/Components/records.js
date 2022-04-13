@@ -46,7 +46,7 @@ export const userData = [
         "cardsVisible": true,
         "bannerDetails":[
             {
-                "image1": "img/ss1.png",
+                "image1": "./img/ss1.png",
                 "image2": "./img/ss2.png",
                 "image3": "./img/ss3.png"
             }
