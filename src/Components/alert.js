@@ -13,7 +13,7 @@ export default class Alert
       toast('Use Code: FLAT50 for 50% off on your cart items. Happy Shopping!', {
         toastId: '001',
         position: toast.POSITION.BOTTOM_RIGHT,
-        autoClose: 9000,
+        autoClose: 27000,
         transition: Zoom
       })
     }
