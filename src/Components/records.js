@@ -6,7 +6,34 @@ export const userData = [
     //     "cartValue": "4",
     //     "sliderVisible": true,
     //     "brandsVisible": true,
-    //     "cardsVisible": true
+    //     "cardsVisible": true,
+    //     "bannerDetails":[
+    //         {
+    //             "image1": "img/ss1.png",
+    //             "image2": "./img/ss2.png",
+    //             "image3": "./img/ss3.png"
+    //         }
+    //     ],
+    //     "offerDetails":[
+    //         {
+    //             "heading1": "FLAT 50% OFF",
+    //             "des1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    //             "button1": "Use Code: FLAT50",
+    //             "heading2": "Buy 2, Get 2 Sale Live!!!",
+    //             "des2": "The some quick example  title and make up the text to build on tcardbulk of the card's content.",
+    //             "button2": "Browse Products",
+    //             "heading3": "New iPhone Launch",
+    //             "des3": "Up example and make up the text to build onThe some quick  tcardbulk of the card's content.",
+    //             "button3": "Send Reminder!"
+    //         }
+    //     ],
+    //     "footerDetails":[
+    //         {
+    //             "sec1":"Tottus Blogs",
+    //             "sec2":"About/Contact",
+    //             "sec3":"Terms & Policies"
+    //         }
+    //     ]
     // }
     // ,
     {
@@ -15,20 +42,20 @@ export const userData = [
         "storeName": "SodimacOnline",
         "cartValue": "2",
         "sliderVisible": true,
-        "brandsVisible": true,
+        "brandsVisible": false,
         "cardsVisible": true,
-        // "bannerDetails":[
-        //     {
-        //         "image1": "img/ss1.png",
-        //         "image2": "./img/ss2.png",
-        //         "image3": "./img/ss3.png"
-        //     }
-        // ]
+        "bannerDetails":[
+            {
+                "image1": "img/ss1.png",
+                "image2": "./img/ss2.png",
+                "image3": "./img/ss3.png"
+            }
+        ],
         "offerDetails":[
             {
-                "heading1": "50% off on everything!",
+                "heading1": "Upto 80% off on items!",
                 "des1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                "button1": "Use Code: FLAT50",
+                "button1": "Use Code: SALE80",
                 "heading2": "Buy 2, Get 2 Sale Live!!!",
                 "des2": "The some quick example  title and make up the text to build on tcardbulk of the card's content.",
                 "button2": "Browse Products",
