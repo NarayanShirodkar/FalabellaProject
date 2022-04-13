@@ -10,7 +10,7 @@ export const userData = [
         "alertVisible": true,
         "bannerDetails":[
             {
-                "image1": "img/ss1.png",
+                "image1": "./img/ss1.png",
                 "image2": "./img/ss2.png",
                 "image3": "./img/ss3.png"
             }
@@ -58,7 +58,7 @@ export const userData = [
     //             "heading1": "Upto 80% off on items!",
     //             "des1": "Some quick example text to build on the card title and make up the bulk of the card's content.",
     //             "button1": "Use Code: SALE80",
-    //             "heading2": "Buy 2, Get 2 Sale Live!!!",
+    //             "heading2": "Buy 5, Get 10 Sale Live!!!",
     //             "des2": "The some quick example  title and make up the text to build on tcardbulk of the card's content.",
     //             "button2": "Browse Products",
     //             "heading3": "Product Launch Schedule",
