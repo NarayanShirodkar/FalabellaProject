@@ -1,18 +1,13 @@
 import React, { Component } from 'react'
 import { userData } from "./records"
 
+function Navbar(props) {
+  return ( 
+  <div>
 
-
-export default class Navbar
- extends Component {
-  render() {
-    const operator=0
-    return (
-      <div>
-        
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 <div class="container-fluid">
-          <a class="navbar-brand mb-0 h1" href="#">{userData.map(user =>{return (<span>{user.storeName}</span>)})}</a>
+          <a class="navbar-brand mb-0 h1" href="#">{props.data.storeName}</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -23,7 +18,7 @@ export default class Navbar
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  {userData.map(user =>{return (<span>{user.userName}</span>)})}
+                {props.data.userName}
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Previous Orders</a></li>
@@ -33,7 +28,7 @@ export default class Navbar
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Cart ({userData.map(user =>{return (<span>{user.cartValue}</span>)})})</a>
+                <a class="nav-link disabled">Cart ({props.data.cartValue})</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -43,7 +38,9 @@ export default class Navbar
           </div>
         </div>
       </nav>
-      </div>
-    )
-  }
+
+  </div> 
+  );
 }
+
+export default Navbar;

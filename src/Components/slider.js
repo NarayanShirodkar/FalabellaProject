@@ -1,22 +1,12 @@
 import React, { Component } from 'react'
 import { userData } from "./records"
 
+function Slider() {
+  return ( 
+    <div>
+      
 
-export default class Slider
- extends Component {
-  render() {
-
-    // {userData.map(user =>{return ( 
-    //     user.bannerDetails.map(imgz=>{
-    //         return (imgz.image1)
-    //     })
-    //  )})}
-
-    return (
-
-        
-
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -43,10 +33,9 @@ export default class Slider
   </button>
 </div>
 
-
-
-
-    )
-  }
+    </div>
+   );
 }
+
+export default Slider;
 
