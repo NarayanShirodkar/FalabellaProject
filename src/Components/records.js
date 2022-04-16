@@ -1,3 +1,6 @@
+import Slider from "./slider";
+import Brands from "./brands";
+import Cards from "./cards";
 export const userData = [
     {
         "id": 1,
@@ -8,6 +11,9 @@ export const userData = [
         "brandsVisible": true,
         "cardsVisible": true,
         "alertVisible": true,
+        "comp1":<Slider/>,
+        "comp2":<Brands/>,
+        "comp3":<Cards/>,
         "bannerDetails":[
             {
                 "image1": "./img/ss1.png",
@@ -46,6 +52,9 @@ export const userData = [
     //     "brandsVisible": false,
     //     "cardsVisible": true,
     //     "alertVisible": true,
+    //     "comp1":<Brands/>,
+    //     "comp2":<Slider/>,
+    //     "comp3":<Cards/>,
     //     "bannerDetails":[
     //         {
     //             "image1": "./img/ss1.png",

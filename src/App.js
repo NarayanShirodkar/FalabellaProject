@@ -13,16 +13,17 @@ import { userData } from "./Components/records"
 import $ from 'jquery'
 
 function App() {
-  const operator = 0;
-  console.log(userData.cartValue)
   return (
     <div className="App">
 
 
 <Navbar/>
-{(userData[0].sliderVisible)?<Slider/>:null}
+{userData.map(comp1=>comp1.comp1)}
+{userData.map(comp2=>comp2.comp2)}
+{userData.map(comp3=>comp3.comp3)}
+{/* {(userData[0].sliderVisible)?<Slider/>:null}
 {(userData[0].brandsVisible)?<Brands/>:null}
-{(userData[0].cardsVisible)?<Cards/>:null}
+{(userData[0].cardsVisible)?<Cards/>:null} */}
 <Footer/>
 {(userData[0].alertVisible)?<Alert/>:null}
 
