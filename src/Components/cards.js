@@ -5,59 +5,69 @@ import s2 from './img/img2.png';
 import s3 from './img/img3.png';
 import { userData } from "./records"
 
-export default class Cards
- extends Component {
-  render() {
-
-    return (
+function Cards(props) {
+    return ( 
         <div>
             <div className='cards-div'>
                 <h1>Exciting offers and discounts!</h1>
+                
 
                 <div class="container">
   <div class="row">
     <div class="col">
         <Card style={{width:'25rem' }}>
-            <CardImg style={{width:'25rem' }} variant="top" src={s1}/>
+            <CardImg style={{width:'25rem' }} variant="top" src={s1} />
                 <CardBody>
-                <CardTitle><strong>{userData.map(user =>{return ( user.offerDetails.map(od=>{return (od.heading1)}))})} </strong> </CardTitle>
+                <CardTitle><strong>
+                {props.data.offerDetails.heading1}
+                    </strong> </CardTitle>
                     <CardText>
-                    {userData.map(user =>{return ( user.offerDetails.map(od=>{return (od.des1)}))})}
+                    {props.data.offerDetails.des1}
                      </CardText>
-                    <a href="#" class="btn btn-primary">{userData.map(user =>{return ( user.offerDetails.map(od=>{return (od.button1)}))})}</a>
+                    <a href="#" class="btn btn-primary">
+                    {props.data.offerDetails.button1}
+                    </a>
                 </CardBody>
-         </Card>
-                            
+         </Card>                    
     </div>
     <div class="col">
         <Card style={{width:'25rem' }}>
             <CardImg style={{width:'25rem' }} variant="top" src={s2}/>
                 <CardBody>
-                <CardTitle><strong>{userData.map(user =>{return ( user.offerDetails.map(od=>{return (od.heading2)}))})} </strong> </CardTitle>
-                <CardText>
-                    {userData.map(user =>{return ( user.offerDetails.map(od=>{return (od.des2)}))})}
+                <CardTitle><strong>
+                {props.data.offerDetails.heading2}
+                    </strong> </CardTitle>
+                    <CardText>
+                    {props.data.offerDetails.des2}
                      </CardText>
-                    <a href="#" class="btn btn-primary">{userData.map(user =>{return ( user.offerDetails.map(od=>{return (od.button2)}))})}</a>
+                    <a href="#" class="btn btn-primary">
+                    {props.data.offerDetails.button2}
+                    </a>
                 </CardBody>
-         </Card>
+         </Card>                    
     </div>
     <div class="col">
         <Card style={{width:'25rem' }}>
-            <CardImg style={{width:'25rem' }} variant="top" src={s3}/>
+            <CardImg style={{width:'25rem' }} variant="top" src={s3} />
                 <CardBody>
-                <CardTitle><strong>{userData.map(user =>{return ( user.offerDetails.map(od=>{return (od.heading3)}))})} </strong> </CardTitle>
-                <CardText>
-                    {userData.map(user =>{return ( user.offerDetails.map(od=>{return (od.des3)}))})}
+                <CardTitle><strong>
+                {props.data.offerDetails.heading3}
+                    </strong> </CardTitle>
+                    <CardText>
+                    {props.data.offerDetails.des3}
                      </CardText>
-                    <a href="#" class="btn btn-primary">{userData.map(user =>{return ( user.offerDetails.map(od=>{return (od.button3)}))})}</a>
+                    <a href="#" class="btn btn-primary">
+                    {props.data.offerDetails.button3}
+                    </a>
                 </CardBody>
-         </Card>           
+         </Card>                    
     </div>
-  </div>
+</div>
 </div>
 
             </div>
         </div>
-    )
-  }
+     );
 }
+
+export default Cards;

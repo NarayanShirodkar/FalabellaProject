@@ -10,22 +10,35 @@ import Cards from './Components/cards';
 import Footer from './Components/footer';
 import Alert from './Components/alert';
 import { userData } from "./Components/records"
+import DemoFunc from './Components/demo';
 import $ from 'jquery'
 
 function App() {
+  const operator = 0;
   return (
     <div className="App">
 
 
-<Navbar/>
-{userData.map(comp1=>comp1.comp1)}
+<Navbar data={userData[operator]} />
+
+{/* 
+{userData.map(userData=>userData)[operator].comp1}
+{userData.map(userData=>userData)[operator].comp2}
+{userData.map(userData=>userData)[operator].comp3} */}
+
+{/* {userData.map(comp1=>comp1.comp1)}
 {userData.map(comp2=>comp2.comp2)}
-{userData.map(comp3=>comp3.comp3)}
-{/* {(userData[0].sliderVisible)?<Slider/>:null}
-{(userData[0].brandsVisible)?<Brands/>:null}
-{(userData[0].cardsVisible)?<Cards/>:null} */}
-<Footer/>
-{(userData[0].alertVisible)?<Alert/>:null}
+{userData.map(comp3=>comp3.comp3)} */}
+
+{(userData[0].sliderVisible)?<Slider data={userData[operator]} />:null}
+{(userData[0].brandsVisible)?<Brands data={userData[operator]} />:null}
+{(userData[operator].cardsVisible)?<Cards data={userData[operator]} />:null}
+
+
+<Footer data={userData[operator]} />
+
+
+{(userData[operator].alertVisible)?<Alert/>:null}
 
 
 
