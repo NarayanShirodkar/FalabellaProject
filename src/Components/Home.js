@@ -30,8 +30,8 @@ function Home() {
 {userData.map(comp2=>comp2.comp2)}
 {userData.map(comp3=>comp3.comp3)} */}
 
-{(userData[0].sliderVisible)?<Slider data={userData[operator]} />:null}
-{(userData[0].brandsVisible)?<Brands data={userData[operator]} />:null}
+{(userData[operator].sliderVisible)?<Slider data={userData[operator]} />:null}
+{(userData[operator].brandsVisible)?<Brands data={userData[operator]} />:null}
 {(userData[operator].cardsVisible)?<Cards data={userData[operator]} />:null}
 
 
