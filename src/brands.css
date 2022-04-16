@@ -1,0 +1,41 @@
+.brands-div{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.brands-div h1{
+    margin: 50px 30px;
+    font-size: 45px;
+}
+.brands-ul li{
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px;
+}
+.brands-ul li a{
+    text-decoration: none;
+}
+.images-css img{
+    border: 1px solid #c1c1c1;
+    height: 225px;
+    width: 225px;
+    cursor: pointer;
+    border-radius: 250px;
+    -webkit-border-radius: 250px;
+}
+.cards-div{
+    margin: 0px 0px 100px 0px;
+    background-color: #f3f3f3;
+    padding: 20px 0px 100px 0px;
+}
+.cards-div h1{
+    margin: 50px 30px;
+    font-size: 45px;
+    text-align: center;
+}
+.sliderImg{
+    height: 600px;
+    width: 1200px;
+}
+.newcss{
+    z-index:11;
+}
