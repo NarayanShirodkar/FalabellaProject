@@ -6,7 +6,7 @@ import { userData } from "./records"
 export default class Navbar
  extends Component {
   render() {
-    console.log(userData)
+    const operator=0
     return (
       <div>
         

@@ -13,8 +13,11 @@ import { userData } from "./Components/records"
 import $ from 'jquery'
 
 function App() {
+  const operator = 0;
+  console.log(userData.cartValue)
   return (
     <div className="App">
+
 
 <Navbar/>
 {(userData[0].sliderVisible)?<Slider/>:null}
